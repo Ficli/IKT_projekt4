@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ftn83ohfktya"]
+
+[ext_resource type="Texture2D" uid="uid://wkhfno8ev5e0" path="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png" id="1_a5lw4"]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Default_Taxi" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(581, 342)
+scale = Vector2(7.80469, 8.15079)
+texture = ExtResource("1_a5lw4")
+hframes = 6
+vframes = 4
