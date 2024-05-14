@@ -26,7 +26,7 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 		sprite_2d.animation = "going_left"
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, 5)
 
 	move_and_slide()
 

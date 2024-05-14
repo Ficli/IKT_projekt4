@@ -139,7 +139,7 @@ scale = Vector2(2.5, 2.70313)
 sprite_frames = SubResource("SpriteFrames_6s3mu")
 animation = &"going_back"
 autoplay = "going_left"
-frame_progress = 0.113647
+frame_progress = 0.0507633
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(552, 263)
