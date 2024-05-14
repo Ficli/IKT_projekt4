@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnwjfm4qef5rf"]
+
+[ext_resource type="Script" path="res://scenes/taxi.gd" id="1_kibls"]
+[ext_resource type="Texture2D" uid="uid://wkhfno8ev5e0" path="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png" id="1_utw5r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05qph"]
+size = Vector2(111, 60)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_kibls")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(553, 263)
+scale = Vector2(2.5, 2.70313)
+texture = ExtResource("1_utw5r")
+hframes = 6
+vframes = 4
+frame = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(552, 263)
+shape = SubResource("RectangleShape2D_05qph")
