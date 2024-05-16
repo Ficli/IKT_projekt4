@@ -1,7 +1,10 @@
 [gd_scene load_steps=20 format=3 uid="uid://dnwjfm4qef5rf"]
 
-[ext_resource type="Script" path="res://scenes/taxi.gd" id="1_kibls"]
 [ext_resource type="Texture2D" uid="uid://wkhfno8ev5e0" path="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png" id="1_utw5r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2bfc"]
+atlas = ExtResource("1_utw5r")
+region = Rect2(0, 64, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_af401"]
 atlas = ExtResource("1_utw5r")
@@ -67,6 +70,14 @@ region = Rect2(320, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_h2bfc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_af401")
 }, {
 "duration": 1.0,
@@ -127,20 +138,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_05qph"]
-size = Vector2(111, 60)
+size = Vector2(32, 50)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_kibls")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(552, 263)
-scale = Vector2(2.5, 2.70313)
+position = Vector2(414, 231)
+scale = Vector2(1.25, 1.35157)
 sprite_frames = SubResource("SpriteFrames_6s3mu")
 animation = &"going_back"
-autoplay = "going_left"
-frame_progress = 0.0507633
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(552, 263)
+position = Vector2(414, 227)
 shape = SubResource("RectangleShape2D_05qph")
