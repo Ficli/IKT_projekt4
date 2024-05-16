@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0jcv0aamfil2"
-path="res://.godot/imported/taxi_jobrol.png-c8fe5078f9f1e29198b82e0c9c5048d8.ctex"
+uid="uid://tubcm1tdlqcc"
+path="res://.godot/imported/l0_sprite_2.png-01c8612d5b006643a2b43abb0e2b4e76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Taxi/taxi_jobrol.png"
-dest_files=["res://.godot/imported/taxi_jobrol.png-c8fe5078f9f1e29198b82e0c9c5048d8.ctex"]
+source_file="res://Assets/No Sprite/Jobb/l0_sprite_2.png"
+dest_files=["res://.godot/imported/l0_sprite_2.png-01c8612d5b006643a2b43abb0e2b4e76.ctex"]
 
 [params]
 

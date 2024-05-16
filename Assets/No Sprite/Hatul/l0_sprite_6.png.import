@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d104tloxjx34x"
-path="res://.godot/imported/taxi_balrol.png-5b1ea541371ec45d5491fa8dd5ad815c.ctex"
+uid="uid://ifu7k8qck0e8"
+path="res://.godot/imported/l0_sprite_6.png-0db3234bb3177dcd2e5967c7975ece4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Taxi/taxi_balrol.png"
-dest_files=["res://.godot/imported/taxi_balrol.png-5b1ea541371ec45d5491fa8dd5ad815c.ctex"]
+source_file="res://Assets/No Sprite/Hatul/l0_sprite_6.png"
+dest_files=["res://.godot/imported/l0_sprite_6.png-0db3234bb3177dcd2e5967c7975ece4d.ctex"]
 
 [params]
 
