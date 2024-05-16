@@ -3067,4 +3067,4 @@ anchor_bottom = 0.165
 offset_left = -0.200012
 offset_top = -4.32
 offset_bottom = 0.0799942
-text = "move: left, right, up, down, space"
+text = "w, a, s, d"
