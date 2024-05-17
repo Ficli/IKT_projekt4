@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dnwjfm4qef5rf"]
+[gd_scene load_steps=20 format=3 uid="uid://dnwjfm4qef5rf"]
 
 [ext_resource type="Texture2D" uid="uid://wkhfno8ev5e0" path="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png" id="1_utw5r"]
 
@@ -21,26 +21,6 @@ region = Rect2(256, 64, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_uf6ig"]
 atlas = ExtResource("1_utw5r")
 region = Rect2(320, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h5ohd"]
-atlas = ExtResource("1_utw5r")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7sf3"]
-atlas = ExtResource("1_utw5r")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oac48"]
-atlas = ExtResource("1_utw5r")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g81wu"]
-atlas = ExtResource("1_utw5r")
-region = Rect2(256, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a7uhx"]
-atlas = ExtResource("1_utw5r")
-region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vqj6u"]
 atlas = ExtResource("1_utw5r")
@@ -110,26 +90,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_h5ohd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7sf3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oac48")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g81wu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a7uhx")
-}],
-"loop": true,
-"name": &"go_left",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_vqj6u")
 }, {
 "duration": 1.0,
@@ -145,7 +105,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_nuoec")
 }],
 "loop": true,
-"name": &"go_right",
+"name": &"go_left",
 "speed": 10.0
 }, {
 "frames": [{
@@ -186,8 +146,8 @@ size = Vector2(348, 204)
 texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6s3mu")
-animation = &"stand_up"
-frame_progress = 0.769423
+animation = &"go_left"
+autoplay = "go_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
