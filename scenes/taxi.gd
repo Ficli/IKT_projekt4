@@ -1,37 +1,40 @@
 extends CharacterBody2D
 @onready var sprite_2d = $Sprite2D
 
-func keyDown(key):
+func keyDown(key: String):
 	return Input.is_action_pressed(key)
+func toRad(deg: float):
+	return (PI / 180) * deg
+func toDeg(rad: float):
+	return (180 / PI) * rad
 
-var speed = 300
-var speedScale = 1
-var acceleration = 10
-var deceleration = 5
-var movementScale = 1
+
+var angle = 0
+var turn = 2
+var MaxSpeed = 400
+var speed = 0
+var acceleration = MaxSpeed * 0.01
+var deceleration = MaxSpeed * 0.005
 
 func _physics_process(delta):
 	
-	if velocity.x != 0 and velocity.y != 0:
-		movementScale = 2
-		speedScale = move_toward(speedScale, 0.72, movementScale)
-	else:
-		movementScale = 1
-		speedScale = 1
+	var x = cos( toRad(angle) )
+	var y = sin( toRad(angle) )
 	
-	#Handle Inputs
 	if keyDown("Up"):
-		velocity.y = move_toward(velocity.y, -speed * speedScale, acceleration * movementScale)
-	if keyDown("Down"):
-		velocity.y = move_toward(velocity.y, speed * speedScale, acceleration * movementScale)
+		speed = move_toward(speed, MaxSpeed, acceleration)
 	if keyDown("Left"):
-		velocity.x = move_toward(velocity.x, -speed * speedScale, acceleration * movementScale)
+		angle = move_toward(angle, angle - 45, turn)
 	if keyDown("Right"):
-		velocity.x = move_toward(velocity.x, speed * speedScale, acceleration * movementScale)
+		angle = move_toward(angle, angle + 45, turn)
+	if keyDown("Down"):
+		speed = move_toward(speed, -MaxSpeed / 2, acceleration)
 	
-	if (!keyDown("Up") and !keyDown("Down")) or (keyDown("Up") and keyDown("Down")):
-		velocity.y = move_toward(velocity.y, 0, deceleration)
-	if !keyDown("Left") and !keyDown("Right") or (keyDown("Left") and keyDown("Right")):
-		velocity.x = move_toward(velocity.x, 0, deceleration)
+	if !keyDown("Up") and !keyDown("Down"):
+		speed = move_toward(speed, 0, deceleration)
+	
+	velocity.x = x * speed
+	velocity.y = y * speed
+	
 	
 	move_and_slide()
