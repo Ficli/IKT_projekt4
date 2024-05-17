@@ -23,6 +23,7 @@ func _physics_process(delta):
 		#Get the pressed and released buttons
 		if Input.is_action_just_pressed(key):
 			directions[key]["state"] = true
+			
 		if Input.is_action_just_released(key):
 			directions[key]["state"] = false
 	
