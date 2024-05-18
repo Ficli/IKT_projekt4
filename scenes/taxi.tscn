@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dnwjfm4qef5rf"]
+[gd_scene load_steps=22 format=3 uid="uid://dnwjfm4qef5rf"]
 
 [ext_resource type="Texture2D" uid="uid://wkhfno8ev5e0" path="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png" id="1_utw5r"]
 
@@ -61,6 +61,14 @@ region = Rect2(256, 128, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_34kuj"]
 atlas = ExtResource("1_utw5r")
 region = Rect2(320, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfcie"]
+atlas = ExtResource("1_utw5r")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv6l2"]
+atlas = ExtResource("1_utw5r")
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uutol"]
 atlas = ExtResource("1_utw5r")
@@ -130,6 +138,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_jfcie")
+}],
+"loop": true,
+"name": &"stand_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv6l2")
+}],
+"loop": true,
+"name": &"stand_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_uutol")
 }],
 "loop": true,
@@ -146,7 +170,7 @@ size = Vector2(348, 204)
 texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6s3mu")
-animation = &"go_left"
+animation = &"stand_down"
 autoplay = "go_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
