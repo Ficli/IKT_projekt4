@@ -1,8 +1,15 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=19 format=3 uid="uid://ftn83ohfktya"]
 
 [ext_resource type="Texture2D" uid="uid://cw4msbeomrrix" path="res://Assets/Other Sprites/Tilemap/tilemap_packed.png" id="1_kqmy0"]
 [ext_resource type="PackedScene" uid="uid://dnwjfm4qef5rf" path="res://scenes/taxi.tscn" id="2_fa41h"]
 [ext_resource type="Script" path="res://scenes/taxi.gd" id="3_chvw5"]
+=======
+[gd_scene load_steps=18 format=3 uid="uid://ftn83ohfktya"]
+
+[ext_resource type="Texture2D" uid="uid://cw4msbeomrrix" path="res://Assets/Other Sprites/Tilemap/tilemap_packed.png" id="1_kqmy0"]
+[ext_resource type="PackedScene" uid="uid://dnwjfm4qef5rf" path="res://scenes/taxi.tscn" id="2_fa41h"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_5b18k"]
 tile_data = PackedInt32Array(0, 2031616, 10, 65536, 2031616, 11)
@@ -2442,7 +2449,10 @@ texture = ExtResource("1_kqmy0")
 19:22/0 = 0
 19:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 19:22/0/physics_layer_0/angular_velocity = 0.0
+<<<<<<< Updated upstream
 19:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+=======
+>>>>>>> Stashed changes
 20:22/0 = 0
 20:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 20:22/0/physics_layer_0/angular_velocity = 0.0
@@ -2542,7 +2552,10 @@ texture = ExtResource("1_kqmy0")
 19:23/0 = 0
 19:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 19:23/0/physics_layer_0/angular_velocity = 0.0
+<<<<<<< Updated upstream
 19:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+=======
+>>>>>>> Stashed changes
 20:23/0 = 0
 20:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 20:23/0/physics_layer_0/angular_velocity = 0.0
@@ -2642,7 +2655,10 @@ texture = ExtResource("1_kqmy0")
 19:24/0 = 0
 19:24/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 19:24/0/physics_layer_0/angular_velocity = 0.0
+<<<<<<< Updated upstream
 19:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+=======
+>>>>>>> Stashed changes
 20:24/0 = 0
 20:24/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 20:24/0/physics_layer_0/angular_velocity = 0.0
@@ -3042,6 +3058,7 @@ pattern_12 = SubResource("TileMapPattern_ll5u2")
 
 [node name="Node" type="Node"]
 
+<<<<<<< Updated upstream
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
@@ -3071,3 +3088,33 @@ layer_0/tile_data = PackedInt32Array(262149, 720896, 19, 327686, 720896, 19, 327
 [node name="CharacterBody2D" parent="CanvasLayer/HBoxContainer" instance=ExtResource("2_fa41h")]
 position = Vector2(-56, -31)
 script = ExtResource("3_chvw5")
+=======
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+rotation = 0.00677315
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_tkgbj")
+format = 2
+layer_0/tile_data = PackedInt32Array(262149, 720896, 19, 327686, 720896, 19, 327687, 720896, 19, 327688, 720896, 19, 327689, 720896, 19, 327690, 720896, 19, 327691, 720896, 19, 262150, 720896, 19, 262151, 720896, 19, 262152, 720896, 19, 262153, 720896, 19, 262154, 720896, 19, 262155, 720896, 19, 327685, 720896, 19, 393221, 720896, 19, 393222, 720896, 19, 393223, 720896, 19, 393224, 720896, 19, 393225, 720896, 19, 393226, 720896, 19, 393227, 720896, 19, 393228, 720896, 19, 327692, 720896, 19, 262156, 720896, 19, 262157, 720896, 19, 327693, 720896, 19, 393229, 720896, 19, 393230, 720896, 19, 393231, 720896, 19, 327695, 720896, 19, 327694, 720896, 19, 262158, 720896, 19, 262159, 720896, 19, 851969, 1245184, 21, 851970, 1245184, 21, 851971, 1245184, 21, 851972, 1245184, 21, 851973, 1245184, 21, 851974, 1245184, 21, 851975, 1245184, 21, 851976, 1245184, 21, 851977, 1245184, 21, 851978, 1245184, 21, 851979, 1245184, 21, 851980, 1245184, 21, 851981, 1245184, 21, 851982, 1245184, 21, 851983, 1245184, 21, 851984, 1245184, 21, 851985, 1245184, 21, 851986, 1245184, 21, 851987, 1245184, 21, 851988, 1245184, 21, 851989, 1245184, 21, 851990, 1245184, 21, 851991, 1245184, 21, 851968, 1245184, 21)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_fa41h")]
+position = Vector2(-40, -9)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = -1
+anchor_left = 0.225
+anchor_top = 0.09
+anchor_right = 0.5
+anchor_bottom = 0.165
+offset_left = -0.200012
+offset_top = -4.32
+offset_bottom = 0.0799942
+text = "move: left, right, up, down, space"
+>>>>>>> Stashed changes
