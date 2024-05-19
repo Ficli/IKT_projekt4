@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< Updated upstream:Assets/Taxi's/Default/Default_Taxi_Sprite.png.import
-uid="uid://wkhfno8ev5e0"
+uid="uid://b2ytm4a1f3x2l"
 path="res://.godot/imported/Default_Taxi_Sprite.png-60a5108a347911111db2022b13efe8cc.ctex"
-========
-uid="uid://7n64pagcv0u4"
-path="res://.godot/imported/l0_sprite_3.png-562f27dbc4be6eaecb6525e36a1a20cc.ctex"
->>>>>>>> Stashed changes:Assets/No Sprite/Bal/l0_sprite_3.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:Assets/Taxi's/Default/Default_Taxi_Sprite.png.import
 source_file="res://Assets/Taxi's/Default/Default_Taxi_Sprite.png"
 dest_files=["res://.godot/imported/Default_Taxi_Sprite.png-60a5108a347911111db2022b13efe8cc.ctex"]
-========
-source_file="res://Assets/No Sprite/Bal/l0_sprite_3.png"
-dest_files=["res://.godot/imported/l0_sprite_3.png-562f27dbc4be6eaecb6525e36a1a20cc.ctex"]
->>>>>>>> Stashed changes:Assets/No Sprite/Bal/l0_sprite_3.png.import
 
 [params]
 
